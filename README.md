@@ -82,25 +82,38 @@ python3 main.py
 
 ###  💻 Sample Output
 ```
-🕒 2025-02-13 02:46:38,988 - Processing repo: Keerthishwaranra/gh-ost
-✅ No stale branches found in Keerthishwaranra/gh-ost
-🗑️ Deleted 2 stale branches from Keerthishwaranra/docs
-📄 Report generated: executive_summary.md
+2025-02-13 03:12:40,256 - repoCleaner - INFO - Processing repo: Keerthishwaranra/dmca
+Enter branch numbers to delete (comma-separated, 'a' for all, 'n' for none): 1
+2025-02-13 03:13:00,398 - repoCleaner - INFO - Completed processing repo: Keerthishwaranra/dmca
+
+Executive Summary:
+Total repositories processed: 4
+Repositories with stale branches: 2
+Total branches deleted: 6
+
+Detailed results saved to: executive_summary.md
 ```
 
 ### 📊 Executive Summary Example
 ```
-# 📑 Executive Summary
-## 📦 Repository: Keerthishwaranra/docs
-- 🗑️ Deleted branches:
-  🪶 old-feature-branch
-  🪶 experimental-changes
-- 🚨 Recommendation: Consider deleting repository (all branches stale)
+## Repository: Keerthishwaranra/docs
+- Branches deleted: 3
+  - dependabot/npm_and_yarn/jest-environment-puppeteer-8.0.6
+  - dependabot/npm_and_yarn/liquidjs-10.6.2
+  - gh-readonly-queue/main/pr-25061-e176635b8745140f0ca5133ed93aed85046068d4
 
-## 📈 Statistics
-🔄 Processed repositories: 4
-⏳ Stale repositories: 1
-🗑️ Total branches deleted: 2
+## Repository: Keerthishwaranra/gh-ost
+- No stale branches found
+
+## Repository: Keerthishwaranra/dmca
+- Branches deleted: 3
+  - update-1607986530
+  - update-1497640593
+  - kathodos/test
+
+## Repository: Keerthishwaranra/DPG-guidance
+- No stale branches found
+- **Recommendation**: Delete this repository as all remaining branches are stale
 ```
 
 ### 🔄 Network Recovery
@@ -109,7 +122,7 @@ Automatically resumes from last successful operation using:
 ```
 // .repocleaner_state.json
 {
-  "processed_repos": ["repo1", "repo2"]
+  "processed_repos": ["Keerthishwaranra/docs", "Keerthishwaranra/gh-ost", "Keerthishwaranra/dmca", "Keerthishwaranra/DPG-guidance"]
 }
 ```
 
