@@ -20,7 +20,7 @@ A smart utility to identify and clean stale GitHub repositories/branches with su
 ### 📥 Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/repoCleaner.git
+   git clone https://github.com/Keerthishwaranra/repoCleaner.git
    cd repoCleaner
    ```
 2. Create a virtual environment:
