@@ -64,6 +64,7 @@ A smart utility to identify and clean stale GitHub repositories/branches with su
     yourusername/repo1
     yourusername/repo2
     yourusername/repo3
+    yourusername/repo4
    ```
     Example:
     ```bash
