@@ -58,6 +58,7 @@ class RepoProcessor:
         all_remaining_stale = all(b['stale'] for b in remaining_branches)
         all_branches_stale = all(b['stale'] for b in branch_data)
         return {
+            'stale_branches': len(stale_non_default),
             'deleted': deleted_branches,
             'recommend_delete_repo': all_remaining_stale and all_branches_stale
         }

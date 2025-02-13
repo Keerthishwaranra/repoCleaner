@@ -112,8 +112,16 @@ Detailed results saved to: executive_summary.md
   - kathodos/test
 
 ## Repository: Keerthishwaranra/DPG-guidance
-- No stale branches found
+- Stale branches preserved
 - **Recommendation**: Delete this repository as all remaining branches are stale
+
+## Summary Statistics
+
+- Total repositories processed: 4
+
+- Repositories with stale branches: 3
+
+- Total branches deleted: 6
 ```
 
 ### 🔄 Network Recovery
