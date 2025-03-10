@@ -1,0 +1,24 @@
+name: Test Runner
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Target URL for ZAP Scan'
+        required: true
+        default: 'https://materialplus.srijan.net/'
+      scan_type:
+        description: 'Type of Scan'
+        required: true
+        default: 'baseline'
+        type: choice
+        options:
+          - baseline
+          - fullscan
+
+jobs:
+  test-runner:
+    runs-on: testing
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
