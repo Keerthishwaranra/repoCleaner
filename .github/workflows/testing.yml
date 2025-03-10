@@ -18,7 +18,7 @@ on:
 
 jobs:
   test-runner:
-    runs-on: testing
+    runs-on: self-hosted
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
